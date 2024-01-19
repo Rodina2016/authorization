@@ -1,0 +1,9 @@
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAIL = "LOGIN_FAIL";
+export const LOGOUT = "LOGOUT";
+export const SET_MESSAGE = "SET_MESSAGE";
+export const CLEAR_MESSAGE = "CLEAR_MESSAGE";
+export const GET_ARTICLES_SUCCESS = "GET_ARTICLES_SUCCESS";
+export const GET_ARTICLES_FAIL = "GET_ARTICLES_FAIL";
+export const SET_CURRENT_ARTICLE = "SET_CURRENT_ARTICLE";
+

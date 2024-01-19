@@ -1,0 +1,14 @@
+
+.articles {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.articlesItem {
+    padding: 20px;
+    min-height: 200px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
