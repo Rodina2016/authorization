@@ -3,10 +3,10 @@ import {Navigate} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 
 import {getArticles, setCurrentArticle} from "../../actions/articles";
-import ArticleModal from "../ArticleModal/ArticleModal";
 import Loader from "../loader/Loader";
 
 import "./Article.css";
+import Modal from "../Modal/Modal";
 
 const Articles = () => {
     const dispatch = useDispatch();
@@ -22,7 +22,10 @@ const Articles = () => {
 
     const handleClick = (id) => {
         dispatch(setCurrentArticle(id))
-        if (!isOpenModal) setIsOpenModal(true);
+        if (!isOpenModal) {
+            document.body.style.overflow = "hidden"
+            setIsOpenModal(true)
+        }
     }
 
     if (!isLoggedIn) {
@@ -46,8 +49,10 @@ const Articles = () => {
                     </div>
                     )
                 })}
-
-                <ArticleModal modalIsOpen={isOpenModal} article={currentArticle} setIsOpenModal={setIsOpenModal}/>
+                <Modal isOpen={isOpenModal} setIsOpen={setIsOpenModal} >
+                    <p>{currentArticle?.id}</p>
+                    <p>{currentArticle?.category.name}</p>
+                </Modal>
             </div>
         </>
     )

@@ -1,5 +1,7 @@
 html {
-    padding: 10px;
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 .App-header {

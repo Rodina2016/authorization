@@ -1,0 +1,36 @@
+.customContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.customContainer::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: .7;
+}
+
+.customModal {
+    display: block;
+    min-width: 500px;
+    padding: 20px;
+    height: fit-content;
+    background: lightgrey;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.button {
+    margin-bottom: 15px;
+}
