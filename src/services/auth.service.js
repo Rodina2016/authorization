@@ -24,7 +24,9 @@ const logout = () => {
     localStorage.removeItem("user");
 };
 
-export default {
+const AuthService =  {
     login,
     logout,
 };
+
+export default AuthService;

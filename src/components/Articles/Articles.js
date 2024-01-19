@@ -15,7 +15,7 @@ const Articles = () => {
 
     useEffect(() => {
         dispatch(getArticles())
-    }, [dispatch, getArticles]);
+    }, [dispatch]);
 
     const {items, currentArticle} = useSelector(state => state.articles);
     const {isLoggedIn} = useSelector(state => state.auth);

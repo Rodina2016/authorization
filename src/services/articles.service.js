@@ -9,6 +9,8 @@ const get = () => {
     });
 };
 
-export default {
+const ArticlesService = {
     get,
 };
+
+export default ArticlesService;
